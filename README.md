@@ -29,8 +29,12 @@ sudo bash init_nrf52tools.sh
 
 2. 在线调试工具  
 [CORTEX-DEBUG](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)  
-配置gcc路径：    
+在cortex-debug的setting中配置gcc路径：    
 ````
-"cortex-debug.armToolchainPath": "/opt/gcc-arm-none-eabi-9-2019-q4-major/bin/"
+{
+    "cortex-debug.JLinkGDBServerPath": "/mnt/c/Program Files (x86)/SEGGER/JLink/JLinkGDBServerCL.exe",
+    "cortex-debug.armToolchainPath": "/opt/gcc-arm-none-eabi-9-2019-q4-major/bin/"
+}
+
 ````
 
